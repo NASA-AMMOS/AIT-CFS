@@ -1,0 +1,11 @@
+--- cmdUtil.c	2017-11-01 03:40:01.012960010 +0000
++++ cmdUtil.c.update	2017-11-01 03:42:16.596606171 +0000
+@@ -226,7 +226,7 @@
+     stringLenString[stringIndex] = '\0';
+     stringLength = strtol(stringLenString, NULL, 10);
+     if (CommandData->Verbose) {
+-        printf("String Length is %d.\n", stringLength);
++        printf("String Length is %ld.\n", stringLength);
+     }
+ 
+     if (stringLength > 128) {

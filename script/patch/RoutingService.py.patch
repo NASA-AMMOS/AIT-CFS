@@ -1,0 +1,13 @@
+--- RoutingService.py	2017-11-01 03:19:39.333026834 +0000
++++ RoutingService.py.update	2017-11-01 03:32:38.414310071 +0000
+@@ -11,7 +11,9 @@
+ from time import sleep
+ 
+ # Receive port where the CFS TO_Lab app sends the telemetry packets
+-udpRecvPort = 1235
++# udpRecvPort = 1235
++# Port where udp-mux.py forwards telemetry from CFS TO_Lab :1235
++udpRecvPort = 1236
+ 
+ #
+ # Receive telemetry packets, apply the appropiate header

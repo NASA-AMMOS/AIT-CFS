@@ -1,0 +1,56 @@
+<!doctype html>
+<head>
+  <link rel="stylesheet" href="bliss/gui/static/build/bliss.bundle.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="bliss/gui/static/build/bliss.bundle.js"></script>
+</head>
+
+<body>
+
+<!-- Status Bar -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">AIT</a><br>
+        </div>  <!-- /.navbar-header -->
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <p class="navbar-text">Telemetry Status:</p>
+            </li>
+            <li>
+                <p class="navbar-text bliss-status-indicators">
+                    <bliss-led on      = "bliss:tlm:packet"
+                               off     = "bliss:tlm:close"
+                               pending = "bliss:tlm:open"
+                               error   = "bliss:tlm:stale"
+                               default = "pending"></bliss-led>
+                    cFS
+                </p>
+            </li>
+            <li>
+                <bliss-clock class="navbar-text" doy="true"></bliss-clock>
+            </li>
+        </ul>  <!-- /.navbar-right -->
+    </div>  <!-- /.container-fluid -->
+</div>  <!-- /.navbar -->
+
+
+<div class="container">
+    <bliss-tabset class="nav-tabs">
+        <bliss-tab title="ES">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4 class="telem-group-title">Executive Services (ES)</h4>
+                    <table class="telem col2">
+                        <tr>
+                            <td>Cmd Counter:   <td><bliss-field packet="CFE_ES_HK" name="CommandCounter"></bliss-field>
+                            <td>Error Counter: <td><bliss-field packet="CFE_ES_HK" name="ErrorCounter"></bliss-field>
+                    </table>
+                </div>  <!-- /.col-sm-6 -->
+            </div> <!-- /.row -->
+        </bliss-tab>
+    </bliss-tabset>
+</div>  <!-- /.container -->
+
+</body>

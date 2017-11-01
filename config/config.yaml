@@ -1,0 +1,24 @@
+default:
+    extensions:
+        bliss.core.cmd.Cmd: bliss.cfs.cmd.cFSCmd
+
+    cmddict:
+        filename:  cmd.yaml
+
+    tlmdict:
+        filename:  tlm.yaml
+
+    logging:
+        name:     bliss
+        hostname: localhost
+
+    gui:
+      html:
+        directory: ../gui
+
+      port: 8080
+
+      telemetry:
+        - stream:
+            port: 1235
+            type: ccsds

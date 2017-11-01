@@ -1,0 +1,27 @@
+- !Command
+  name:      CFS_ES_NO_OP
+  opcode:    0x00
+  ccsds:     { apid: 0x06 }
+  subsystem: ES
+  title:     Executive Services No Operation
+  desc:      Executive Services No Operation
+
+
+- !Command
+  name:      CFS_TO_OUTPUT_ENABLE
+  opcode:    0x06
+  ccsds:     { apid: 0x80 }
+  subsystem: TO
+  title:     Enable Telemetry
+  desc:      |
+      Instructs the cFS Telemetry Output (TO) application to enable
+      telemetry output, sending it to port 1235 at the specified IP
+      address.
+
+  arguments:
+    - !Argument
+      name:  destination
+      desc:  Destination IP address as a string (e.g. 127.0.0.1)
+      units: none
+      type:  S16
+      bytes: [0, 15]
