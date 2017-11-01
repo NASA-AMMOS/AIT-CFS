@@ -10,5 +10,8 @@ setup(
     author_email = 'bliss@jpl.nasa.gov',
 
     namespace_packages = ['bliss'],
-    install_requires   = ['bliss-core>=0.25.0'],
+    install_requires   = ['bliss-core>=0.26.1'],
+    dependency_links = [
+       'https://bliss.jpl.nasa.gov/pypi/simple/bliss-core/'
+    ],
 )
