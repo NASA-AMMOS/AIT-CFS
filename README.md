@@ -3,7 +3,7 @@
 ## Quickstart
 
     # Install bliss.cfs Python package (in developer mode)
-    $ pip install -e .
+    $ pip install -e . --process-dependency-links
 
     # Start (and provision, first boot only) the cFS VM
     $ vagrant up
