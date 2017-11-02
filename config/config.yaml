@@ -20,5 +20,5 @@ default:
 
       telemetry:
         - stream:
-            port: 1235
+            port: 1236
             type: ccsds
