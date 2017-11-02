@@ -35,22 +35,50 @@
     </div>  <!-- /.container-fluid -->
 </div>  <!-- /.navbar -->
 
-
-<div class="container">
+<div class='site-container'>
+  <div class='telemcontainer'>
     <bliss-tabset class="nav-tabs">
-        <bliss-tab title="ES">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h4 class="telem-group-title">Executive Services (ES)</h4>
-                    <table class="telem col2">
-                        <tr>
-                            <td>Cmd Counter:   <td><bliss-field packet="CFE_ES_HK" name="CommandCounter"></bliss-field>
-                            <td>Error Counter: <td><bliss-field packet="CFE_ES_HK" name="ErrorCounter"></bliss-field>
-                    </table>
-                </div>  <!-- /.col-sm-6 -->
-            </div> <!-- /.row -->
-        </bliss-tab>
+      <bliss-tab title="Executive Services">
+        <table class="telem col2">
+            <tr>
+                <td>Cmd Counter:   <td><bliss-field packet="CFE_ES_HK" name="CommandCounter"></bliss-field>
+                <td>Error Counter: <td><bliss-field packet="CFE_ES_HK" name="ErrorCounter"></bliss-field>
+        </table>
+      </bliss-tab>
     </bliss-tabset>
-</div>  <!-- /.container -->
+  </div>
+  
+
+  <div class='ctrlcontainer'>
+    <bliss-tabset class='nav-tabs'>
+      <bliss-tab title='Commanding'>
+        <div class='cmd-tab-container'>
+          <div class="cmd-browser-container">
+            <bliss-command-search>
+            </bliss-command-search>
+          </div>
+          <div class="cmd-config-container">
+            <bliss-command-configure>
+            </bliss-command-configure>
+          </div>
+          <div class='cmd-search-container'>
+            <bliss-command-input></bliss-command-input>
+            <hr />
+          </div>
+        </div>
+      </bliss-tab>
+      <bliss-tab title='Command History'>
+        <div class="row">
+          <div class="col-lg-12">
+            <div style="height:200px;overflow:auto;">
+              <bliss-command-history></bliss-command-history>
+            </div>
+          </div>
+        </div>
+      </bliss-tab>
+    </bliss-tabset>
+  </div>
+</div>
+
 
 </body>
