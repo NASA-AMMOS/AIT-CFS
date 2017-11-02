@@ -11,8 +11,8 @@ setup(
 
     namespace_packages = ['bliss'],
     install_requires   = [
-        'bliss-core>=0.26.1',
-        'bliss-gui>=0.13.2',
+        'bliss-core>=0.26.2',
+        'bliss-gui>=0.13.3',
     ],
     dependency_links = [
        'https://bliss.jpl.nasa.gov/pypi/simple/bliss-core/',
