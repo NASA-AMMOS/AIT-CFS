@@ -36,7 +36,10 @@ with open(filename, 'rt') as stream:
         else:
             print '      bytes: [%d, %d]' % (bytes, bytes + size - 1)
 
-        print '      type:  %s' % types[ cols[3] ]
+        if cols[3] == 's':
+            print '      type:  S%s' % cols[2]
+        else:
+            print '      type:  %s' % types[ cols[3] ]
 
         if cols[4] == 'Enm':
             print '      enum:'
