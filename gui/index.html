@@ -89,10 +89,16 @@
                 <td>Heap Blocks Free: <td><bliss-field packet="CFE_ES_HK" name="HeapBlocksFree"></bliss-field>
                 <td>Head Max Block Size: <td><bliss-field packet="CFE_ES_HK" name="HeapMaxBlkSize"></bliss-field>
         </table>
+
+        <bliss-plot title="Command Count" y-title="Counts">
+            <bliss-plot-series type="line" packet="CFE_ES_HK" name="CommandCounter"></bliss-plot-series>
+        </bliss-plot>
+
       </bliss-tab>
     </bliss-tabset>
   </div>
-  
+
+
 
   <div class='ctrlcontainer'>
     <bliss-tabset class='nav-tabs'>
