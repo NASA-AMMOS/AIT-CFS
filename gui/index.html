@@ -38,11 +38,56 @@
 <div class='site-container'>
   <div class='telemcontainer'>
     <bliss-tabset class="nav-tabs">
-      <bliss-tab title="Executive Services">
+      <bliss-tab title="Executive Services (ES)">
         <table class="telem col2">
             <tr>
                 <td>Cmd Counter:   <td><bliss-field packet="CFE_ES_HK" name="CommandCounter"></bliss-field>
                 <td>Error Counter: <td><bliss-field packet="CFE_ES_HK" name="ErrorCounter"></bliss-field>
+            <tr>
+                <td>Core Checksum: <td><bliss-field packet="CFE_ES_HK" name="cFECoreChecksum" format="0x%04x"></bliss-field>
+                <td>Major Version: <td><bliss-field packet="CFE_ES_HK" name="cFEMajorVersion"></bliss-field>
+            <tr>
+                <td>Minor Version: <td><bliss-field packet="CFE_ES_HK" name="cFEMinorVersion"></bliss-field>
+                <td>Revision: <td><bliss-field packet="CFE_ES_HK" name="cFERevision"></bliss-field>
+            <tr>
+                <td>Mission Revision: <td><bliss-field packet="CFE_ES_HK" name="cFEMissionRevision"></bliss-field>
+                <td>OSAL Major Version: <td><bliss-field packet="CFE_ES_HK" name="OSALMajorVersion"></bliss-field>
+            <tr>
+                <td>OSAL Minor Version: <td><bliss-field packet="CFE_ES_HK" name="OSALMinorVersion"></bliss-field>
+                <td>OSAL Revision: <td><bliss-field packet="CFE_ES_HK" name="OSALRevision"></bliss-field>
+            <tr>
+                <td>OSAL Mission Rev: <td><bliss-field packet="CFE_ES_HK" name="OSALMissionRev"></bliss-field>
+                <td>Syslog Bytes Used: <td><bliss-field packet="CFE_ES_HK" name="SyslogBytesUsed"></bliss-field>
+            <tr>
+                <td>Syslog Size: <td><bliss-field packet="CFE_ES_HK" name="SyslogSize"></bliss-field>
+                <td>Syslog Entries: <td><bliss-field packet="CFE_ES_HK" name="SyslogEntries"></bliss-field>
+            <tr>
+                <td>Syslog Mode: <td><bliss-field packet="CFE_ES_HK" name="SyslogMode"></bliss-field>
+                <td>ER Log Index: <td><bliss-field packet="CFE_ES_HK" name="ERlogIndex"></bliss-field>
+            <tr>
+                <td>ER Log Entries: <td><bliss-field packet="CFE_ES_HK" name="ERlogEntries"></bliss-field>
+                <td>Registered Core Apps Count: <td><bliss-field packet="CFE_ES_HK" name="RegisteredCoreApps"></bliss-field>
+            <tr>
+                <td>Registered CFS Apps Count: <td><bliss-field packet="CFE_ES_HK" name="RegisteredCFSApps"></bliss-field>
+                <td>Registered Tasks Count: <td><bliss-field packet="CFE_ES_HK" name="RegisteredTasks"></bliss-field>
+            <tr>
+                <td>Registered Libs: <td><bliss-field packet="CFE_ES_HK" name="RegisteredLibs"></bliss-field>
+                <td>Reset Type: <td><bliss-field packet="CFE_ES_HK" name="ResetType"></bliss-field>
+            <tr>
+                <td>Reset Subtype: <td><bliss-field packet="CFE_ES_HK" name="ResetSubtype"></bliss-field>
+                <td>Processor Resets: <td><bliss-field packet="CFE_ES_HK" name="ProcessorResets"></bliss-field>
+            <tr>
+                <td>Max Proc Resets: <td><bliss-field packet="CFE_ES_HK" name="MaxProcResets"></bliss-field>
+                <td>Boot Source: <td><bliss-field packet="CFE_ES_HK" name="BootSource"></bliss-field>
+            <tr>
+                <td>Perf Mon State: <td><bliss-field packet="CFE_ES_HK" name="PerfMonState"></bliss-field>
+                <td>Perf Mon Mode: <td><bliss-field packet="CFE_ES_HK" name="PerfMonMode"></bliss-field>
+            <tr>
+                <td>Perf Trigger Count: <td><bliss-field packet="CFE_ES_HK" name="PerfTriggerCount"></bliss-field>
+                <td>Heap Bytes Free: <td><bliss-field packet="CFE_ES_HK" name="HeapBytesFree"></bliss-field>
+            <tr>
+                <td>Heap Blocks Free: <td><bliss-field packet="CFE_ES_HK" name="HeapBlocksFree"></bliss-field>
+                <td>Head Max Block Size: <td><bliss-field packet="CFE_ES_HK" name="HeapMaxBlkSize"></bliss-field>
         </table>
       </bliss-tab>
     </bliss-tabset>
