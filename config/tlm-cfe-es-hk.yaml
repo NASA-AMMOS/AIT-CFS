@@ -1,6 +1,6 @@
 - !Packet
   name:  CFE_ES_HK
-  desc:  Executive Services (ES) Houskeeping
+  desc:  Executive Services (ES) Housekeeping
   ccsds:
     apid: 0
 
