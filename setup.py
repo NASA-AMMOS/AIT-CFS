@@ -3,19 +3,15 @@ from setuptools import setup, find_packages
 import os
 
 setup(
-    name         = 'bliss-cfs',
-    version      = '0.1.0',
+    name         = 'ait-cfs',
+    version      = '1.0.0',
     packages     = find_packages(exclude=['tests']),
-    author       = 'BLISS-cFS Development Team',
-    author_email = 'bliss@jpl.nasa.gov',
+    author       = 'ait-cFS Development Team',
+    author_email = 'ait@jpl.nasa.gov',
 
-    namespace_packages = ['bliss'],
+    namespace_packages = ['ait'],
     install_requires   = [
-        'bliss-core>=0.26.2',
-        'bliss-gui>=0.13.3',
-    ],
-    dependency_links = [
-       'https://bliss.jpl.nasa.gov/pypi/simple/bliss-core/',
-       'https://bliss.jpl.nasa.gov/pypi/simple/bliss-gui/'
+        'ait-core==1.1.0',
+        'ait-gui==1.0.0',
     ],
 )

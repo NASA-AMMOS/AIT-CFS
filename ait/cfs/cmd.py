@@ -16,13 +16,13 @@
 """
 Core Flight Software (cFS) Commands
 
-The bliss.cfs.cmd module specializes bliss.core.cmd for
+The ait.cfs.cmd module specializes ait.core.cmd for
 NASA's Core Flight Software (cFS;  http://cfs.gsfc.nasa.gov).
 """
 
 
 import struct
-from bliss.core import ccsds, cmd
+from ait.core import ccsds, cmd
 
 
 class cFSCmd(cmd.Cmd):
