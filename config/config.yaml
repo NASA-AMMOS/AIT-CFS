@@ -1,6 +1,6 @@
 default:
     extensions:
-        bliss.core.cmd.Cmd: bliss.cfs.cmd.cFSCmd
+        ait.core.cmd.Cmd: ait.cfs.cmd.cFSCmd
 
     cmddict:
         filename:  cmd.yaml
@@ -9,7 +9,7 @@ default:
         filename:  tlm.yaml
 
     logging:
-        name:     bliss
+        name:     ait
         hostname: localhost
 
     gui:

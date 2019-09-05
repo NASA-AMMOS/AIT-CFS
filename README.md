@@ -2,7 +2,7 @@
 
 ## Quickstart
 
-    # Install bliss.cfs Python package (in developer mode)
+    # Install ait.cfs Python package (in developer mode)
     $ pip install -e . --process-dependency-links
 
     # Start (and provision, first boot only) the cFS VM
@@ -22,17 +22,16 @@
 
 
     # Terminal 3 - Start AIT GUI
-    $ bliss-gui
+    $ ait-gui
 
 You can enable cFS telemetry output via the AIT GUI or command-line,
 e.g.:
 
-    $ bliss-cmd-send CFS_TO_OUTPUT_ENABLE 127.0.0.1
+    $ ait-cmd-send CFS_TO_OUTPUT_ENABLE 127.0.0.1
 
 You can also send a cFE a CFS_ES_NO_OP command:
 
-    $ bliss-cmd-send CFS_ES_NO_OP
-
+ $ ait-cmd-send CFS_ES_NO_OP
 
 # Join the Community
 

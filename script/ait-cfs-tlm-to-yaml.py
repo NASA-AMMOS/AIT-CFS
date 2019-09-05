@@ -7,7 +7,7 @@ types = { 'B': 'U8', 'H': 'MSB_U16', 'I': 'MSB_U32' }
 
 
 if len(sys.argv) != 2:
-    print 'usage: bliss-cfs-tlm-to-yaml.py tlm.txt'
+    print 'usage: ait-cfs-tlm-to-yaml.py tlm.txt'
     print
     print 'Where tlm.txt is a telemetry text file from'
     print 'cFE/tools/cFS-GroundSystem/Subsystems/tlmGUI'
