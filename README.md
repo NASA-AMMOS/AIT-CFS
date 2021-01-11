@@ -35,10 +35,10 @@ You can also send a cFE a CFS_ES_NO_OP command:
 
 # Join the Community
 
-The project's [User and Developer Mailing List](https://groups.google.com/forum/#!forum/ait-dev>) is the best way to communicate with the team, ask questions, brainstorm plans for future changes, and help contribute to the project.
+The project's [User and Developer Mailing List](https://groups.google.com/forum/#!forum/ait-dev) is the best way to communicate with the team, ask questions, brainstorm plans for future changes, and help contribute to the project.
 
-This project exists thanks to the dedicated users, contributors, committers, and project management committee members. If you'd like to learn more about how the project is organized and how to become a part of the team please check out the [Project Structure and Governance](https://github.com/NASA-AMMOS/AIT-Core/wiki/Project-Structure-and-Governance>) documentation.
+This project exists thanks to the dedicated users, contributors, committers, and project management committee members. If you'd like to learn more about how the project is organized and how to become a part of the team please check out the [Project Structure and Governance](https://github.com/NASA-AMMOS/AIT-Core/wiki/Project-Structure-and-Governance) documentation.
 
 # Contributing
 
-For information on how to contribute please see the [AIT Contributing Guide](https://github.com/NASA-AMMOS/AIT-Core/wiki/Contributing>)
+For information on how to contribute please see the [AIT Contributing Guide](https://github.com/NASA-AMMOS/AIT-Core/wiki/Contributing)
